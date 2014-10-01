@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Django Slides</title>
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/fathom.min.js"></script>
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/prettify.css">	
+</head>
+<script>
+  $(document).ready(function(){
+	
+	
+	var fathom = $('#presentation').fathom({
+		onActivateSlide: function() {
+			var $slide = $(this);
+		
+		}
+	});
+});
+</script>
+<body>
+	<div id="presentation">
+
+	  <div class="slide">
+	    <h1>My Presentation</h1>
+	    <pre>
+
+		</pre>
+	  </div>
+	  
+	  <div class="slide">
+	    <h2>My Dot Points</h2>
+	    <ul>
+	      <li>First dot point</li>
+	      <li>Second dot point</li>
+	      <li>Third dot point</li>
+	    </ul>
+	 </div>
+  
+</div>
+<script type="text/javascript" src="js/prettify/prettify.js"></script>
+<script type="text/javascript" src="js/prettify/run_prettify.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
