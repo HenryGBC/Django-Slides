@@ -62,7 +62,10 @@
 			<li>Recargado: viene con muchas librerías por defecto.</li>
 		</ul>
 
-
+		 <div class="footer">
+			<a href="">@HenryGBC</a>
+			<a href="">henrygbc.com</a>
+		</div>
 	 </div>
 
 	 <div class="slide">
@@ -81,7 +84,155 @@
 
  my_first_function()	
 </pre>
+ <div class="footer">
+			<a href="">@HenryGBC</a>
+			<a href="">henrygbc.com</a>
+		</div>
 	 </div>
+	 <div class="slide">
+	 	<h2 class="smmallTitle">Listas</h2>
+	 	<p class="parrafo">Las listas son estructuras de datos que se encargan de almacenar y ordenar elementos, las listas son del tipo mutable y pueden manejar varios tipos de datos a la vez. </p>
+	 	<pre>lista = [1, True, "Awante Táchira", [1,2,3]]</pre>
+	 	<h2 class="smallTitle">Tuplas</h2>
+	 	<p class="parrafo">Tienen el mismo formato de las listas pero a diferencia de ellas, las tuplas
+	 		son inmutables.</p>
+	 	<pre>tupla = (1, True, "Awante Táchira")</pre>
+	 	<h2 class="smallTitle">Ciclo For</h2>
+	 	<pre>
+ for i in lista:
+	print i
+	 	</pre>
+	 	<p >
+	 		<b>1</b><br>
+	 		<b>True</b><br>
+	 		<b>"Awante Táchira"</b><br>
+	 		<b>[1,2,3]</b><br>
+
+	 	</p>
+	 		 	<pre>
+ for i in range(4):
+	print i
+	 	</pre>
+	 	<p >
+	 		<b>1</b><br>
+	 		<b>2</b><br>
+	 		<b>3</b><br>
+	 		<b>4</b><br>
+
+	 	</p>
+	 	 <div class="footer">
+			<a href="">@HenryGBC</a>
+			<a href="">henrygbc.com</a>
+		</div>
+	 </div>
+	 <div class="slide">
+	 	<h2 class="smallTitle">Diccionarios</h2>
+	 	<p class="parrafo">En los diccionarios tienes un grupo de datos con un formato: la primera cadena o número será la clave para acceder al segundo dato, el segundo dato será el dato al cual accederás con la llave.</p>
+	 	<pre>
+  D = { "nombre": Henry, "profesión": Ingeniero informatico, "año": 2014 }
+  print D["nombre"]
+	 	</pre>
+	 	<p class="parrafo">
+	 		<b>Henry</b>
+	 	</p>
+	 	<h2 class="smallTitle">Clases</h2>
+	 	<p class="parrafo">Para definir la clase usas class y el nombre. En caso de tener parámetros los pones entre paréntesis. <br>
+		Para crear un constructor haces una función dentro de la clase con el nombre __init__ y de parámetros self (significa su clase misma).
+	 	</p>
+	 	<pre>
+  class Perfil(object):
+  		def __init__ (self, nom, prof):
+  			self.nombre = nom
+  			self.profesion= prof
+
+  		def info(self):
+  			return "Mi nombre es %s y soy %s" % (self.nombre, self.profesion)
+
+  persona = Perfil("Henry", "Ingeniero Informatico")
+  print persona.info()
+	 	</pre>
+	 	<p class="parrafo">
+	 		<b>Mi nombre es Henry y soy Ingeniero Informatico</b>
+	 	</p>
+	 	 <div class="footer">
+			<a href="">@HenryGBC</a>
+			<a href="">henrygbc.com</a>
+		</div>
+	 </div>
+	 <div class="slide">
+	 	<h2 class="smallTitle">Conversiones</h2>
+	 	<p class="parrafo">De flotante a Entero</p>
+	 	<pre>
+  >>> int(4.3)
+  4</pre>
+  <p class="parrafo">De Entero a Flotante</p>
+	 	<pre>
+  >>> float(4)
+  4.0</pre>
+  <p class="parrafo">De entero a string</p>
+	 	<pre>
+  >>> str(4)
+  " 4 "</pre>
+  <p class="parrafo">De tupla a lista</p>
+	 	<pre>
+  >>> list((4,5,2))
+  [4,5,2]</pre>
+		<h2 class="smallTitle">Otros operadores</h2>
+		<p class="parrafo">Longitud de una cadena, lista, tupla etc...</p>
+		<pre>
+  >>> len("Informatica")
+  11</pre>
+  		<p class="parrafo">Tipo de dato</p>
+		<pre>
+  >>> type(10)
+  < type int >  </pre>
+  		<p class="parrafo">Aplicar una conversión a un conjunto como una lista:</p>
+		<pre>
+  >>> map(str,[1,2,3,4])
+  ['1','2','3','4'] </pre>
+  	    <p class="parrafo">Redondear un flotante con x número de decimales:</p>
+		<pre>
+  >>>  round(6.3243,1)
+  6.3 </pre> 
+  		<p class="parrafo">Sumar un conjunto</p>
+		<pre>
+  >>> sum([1,2,4])
+  7 </pre>
+  		<p class="parrafo">Organizar un conjunto</p>
+		<pre>
+  >>> sorted([5,2,1])
+  [1,2,5]</pre>
+  <p class="parrafo">Ver que funciones tienen X tipo de datos</p>
+		<pre>
+  >>>  dir([5,2,1])
+  (Aparecerá todas las funciones que tiene una lista)</pre>
+  		<p class="parrafo">Gestión de errores</p>
+		<pre>
+  >>> while True:
+  ...     try:
+  ...         x = int(raw_input("Ingrese un número: "))
+  ...         break
+  ...     except ValueError:
+  ...         print "¡Huy! No es un número. Prueba de nuevo..."</pre>
+	<p class="parrafo">Guia de aprendizaje de python por Guido van Rossum</p>
+	<a href="http://pyspanishdoc.sourceforge.net/tut/tut.html">http://pyspanishdoc.sourceforge.net/tut/tut.html</a>
+   <div class="footer">
+			<a href="">@HenryGBC</a>
+			<a href="">henrygbc.com</a>
+		</div>
+	 </div>
+
+	 <div class="slide">
+	 	<h1 class="smallTitle">Nuestra primera aplicacion con Django</h1>
+	 	<p class="parrafo">Lo primero que debemos tener instalado es <b>pip</b> </p>
+	 	<pre>
+  $ wget https://bootstrap.pypa.io/get-pip.py
+  $ python get-pip.py
+	 	</pre>
+	 </div>
+
+	 
+
   
 </div>
 <script type="text/javascript" src="js/prettify/prettify.js"></script>
